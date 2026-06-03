@@ -1,0 +1,169 @@
+body {
+    background-color: #912626;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-section {
+    background-color: #f5f3ef;
+    border-bottom: 1px solid #ff9500;
+    padding-bottom: 60px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #912626;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #912626;
+    letter-spacing: 0.5px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+    color: #912626;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 0 20px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #556062;
+}
+
+.services-section {
+    padding: 80px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    background: #ffffff;
+    border: 1px solid #e8e6e2;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.01);
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #2c3e50;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.footer-section {
+    background-color: #f5f3ef;
+    border-top: 1px solid #fb8200;
+    padding: 50px 0 30px 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #912626;
+}
+
+.footer-left h3 {
+    font-size: 22px;
+    color: #000913;
+    margin-bottom: 5px;
+}
+
+.footer-left p {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    text-align: center;
+    color: #a69595;
+    font-size: 13px;
+}
+
+
+/* Laptop dan HP */
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Tablet dan HP Kecil */
+
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+    .nav-menu a {
+        margin-left: 0;
+        font-size: 16px;
+    }
+    .hero h1 {
+        font-size: 28px;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+    .footer-menu li {
+        text-align: center;
+        margin-bottom: 12px;
+    }
+}
